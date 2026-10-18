@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Story - Ethan Winters</title>
+    <link rel="stylesheet" href="styleberanda.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="character-detail-container">
+        <div class="detail-bg">
+            <img id="detail-bg-img" src="Ethan2.png" alt="Character Background">
+            <div class="bg-gradient"></div>
+        </div>
+
+        <header class="detail-header">
+            <div class="logo">THEREDHERB</div>
+            <a href="index.html" class="back-btn">RETURN TO ARCHIVE</a>
+        </header>
+
+        <div class="detail-content-wrapper">
+            <nav class="vertical-nav" data-aos="fade-right" data-aos-duration="1000">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="active"><a href="#">STORY</a></li>
+                    <li><a href="#">ABILITIES</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                </ul>
+            </nav>
+
+            <!-- Teks Konten -->
+            <main class="detail-main-text" data-aos="fade-up" data-aos-duration="1200">
+                <h1 class="detail-title">STORY</h1>
+                <div class="text-content" id="detail-story-content">
+                    <p>Ethan Winters was an American mutant trained as a systems engineer. One of many mutant victims of biological weaponry, Winters was infected with a weaponized species of "Mold" during the 2017 Dulvey incident, caused by Eveline, an E-001 bioweapon created by The Connections and HCF. Following Eveline's death by his hands, Winters and his wife Mia were rescued by Chris Redfield of the Bioterrorism Security Assessment Alliance.</p>
+                    <p>Fearing the Winters were now The Connections's targets, they were placed under witness protection and relocated to Eastern Europe. Since the Baker Incident, Winters received military training, and have their daughter Rosemary Winters with his wife. However, this put them in Miranda's crosshair, as Rosemary was considered to be a candidate for her daughter Eva's vessel. By February 2021, Winters was placed in the Village, where Rosemary was held by Miranda. Eventually, Winters successfully rescued Rosemary, but gave up his life to save his family from Miranda's clutches.</p>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="detail-footer">
+            <div class="footer-left">Privacy policy</div>
+            <div class="footer-right">
+                <span>RESIDENT EVIL ARCHIVE &copy; CAPCOM CO., LTD.</span>
+                <div class="social-icons-small">
+                    <a href="#">&#9729;</a> 
+                    <a href="#">&#9733;</a>
+                    <a href="#">&#9737;</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+
+        // Database karakter lengkap untuk halaman detail
+        const fullCharData = [
+            {
+                id: 0,
+                name: "Ethan Winters",
+                bgImg: "Ethan2.png", 
+                story: `
+                    <p>Ethan Winters was an American mutant trained as a systems engineer. One of many mutant victims of biological weaponry, Winters was infected with a weaponized species of "Mold" during the 2017 Dulvey incident, caused by Eveline, an E-001 bioweapon created by The Connections and HCF. Following Eveline's death by his hands, Winters and his wife Mia were rescued by Chris Redfield of the Bioterrorism Security Assessment Alliance.</p>
+                    <p>Fearing the Winters were now The Connections's targets, they were placed under witness protection and relocated to Eastern Europe. Since the Baker Incident, Winters received military training, and have their daughter Rosemary Winters with his wife. However, this put them in Miranda's crosshair, as Rosemary was considered to be a candidate for her daughter Eva's vessel. By February 2021, Winters was placed in the Village, where Rosemary was held by Miranda. Eventually, Winters successfully rescued Rosemary, but gave up his life to save his family from Miranda's clutches.</p>
+                `
+            },
+            {
+                id: 1,
+                name: "Chris Redfield",
+                bgImg: "Chris.png", 
+                story: `
+                    <p>Captain Chris Redfield is an American operator in the Bioterrorism Security Assessment Alliance, in which he has served since its foundation in 2003. Redfield has built up and dedicated his career in destroying Bio Organic Weapons and fighting against producers and sellers of bioweapons after his experiences with bioterrorism in 1998. He is the older brother of TerraSave member Claire Redfield.</p>
+                    <p>Following the Raccoon City Destruction Incident, Chris joined forces with Jill Valentine to bring down Umbrella. He eventually became a founding member of the BSAA. By 2021, Chris was leading the Hound Wolf Squad, an elite covert unit operating independently from the BSAA, investigating the connection between Mother Miranda and the Megamycete.</p>
+                `
+            },
+            {
+                id: 2,
+                name: "Leon S. Kennedy",
+                bgImg: "Leon.png",
+                story: `
+                    <p>Leon Scott Kennedy is an American agent currently employed by the Division of Security Operations (DSO), a counterterrorism agency under direct Presidential command. Kennedy is a known survivor of the 1998 Raccoon City Destruction Incident, which he experienced on his first day as a police officer. Following his escape, he was forcefully recruited into a top-secret government agency.</p>
+                    <p>Over the years, Leon has been involved in numerous high-stakes operations worldwide, including the rescue of the President's daughter in rural Spain. His combat prowess, resilience, and unwavering sense of justice have made him one of the government's most reliable and seasoned operatives against biological threats.</p>
+                `
+            },
+            {
+                id: 3,
+                name: "Claire Redfield",
+                bgImg: "Claire.png",
+                story: `
+                    <p>Claire Redfield is a current member of the human rights organization, TerraSave. She is the younger sister of BSAA operative Chris Redfield. Arriving in Raccoon City in 1998 to search for her missing brother, she found herself trapped in the middle of a viral outbreak. Together with Leon S. Kennedy, she managed to survive the nightmare.</p>
+                    <p>Since her survival in the Raccoon City incident, Claire devoted her career to combating the threat of Bio Organic Weapons by aiding victims of bioterrorism worldwide. Unlike her brother who chose the path of a soldier, Claire fights the same war from a humanitarian perspective, exposing corporate corruption and helping the survivors.</p>
+                `
+            },
+            {
+                id: 4,
+                name: "Grace Ashcroft",
+                bgImg: "Grace.png",
+                story: `
+                    <p>Grace Ashcroft is an intelligence analyst for the Federal Bureau of Investigation. Eight years after the assassination of her adoptive mother, Alyssa Ashcroft, Grace was targeted by Victor Gideon and Zeno of the shadow organization called The Connections.</p>
+                    <p>Believed to be the key to unlocking Elpis, Grace utilizes her exceptional analytical skills and FBI resources to untangle the web of conspiracies surrounding her mother's death and The Connections' overarching goals in biological warfare.</p>
+                `
+            }
+        ];
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const charIdParam = urlParams.get('char');
+        
+        if (charIdParam !== null && !isNaN(charIdParam) && charIdParam >= 0 && charIdParam < fullCharData.length) {
+            const activeChar = fullCharData[charIdParam];
+            
+            // Ubah Title Tab Browser
+            document.getElementById('page-title').innerText = "Story - " + activeChar.name;
+            
+            // Ubah Gambar Background
+            document.getElementById('detail-bg-img').src = activeChar.bgImg;
+            
+            // Ubah Teks Cerita (Story)
+            document.getElementById('detail-story-content').innerHTML = activeChar.story;
+        }
+    </script>
+</body>
+</html>

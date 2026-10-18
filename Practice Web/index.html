@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE RED HERB - Resident Evil</title>
+    <link rel="stylesheet" href="styleberanda.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="hero-slider">
+            <div class="slide slide-1"><img src="Village.png" alt="Slider 1"></div>
+            <div class="slide slide-2"><img src="Pablo.png" alt="Slider 2"></div>
+            <div class="slide slide-3"><img src="RPD.png" alt="Slider 3"></div>
+            <div class="slide slide-4"><img src="Singer.png" alt="Slider 4"></div>
+        </div>
+
+        <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+            <div class="logo">THEREDHERB</div>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="character_list.html">CHARACTERS</a></li>
+                <li><a href="#editions">EDITIONS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#locations">LOCATIONS</a></li>
+                <li><a href="#">TRAILERS</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#">&#9729;</a> 
+                <a href="#">&#9733;</a>
+                <a href="#">&#9737;</a>
+            </div>
+        </nav>
+
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1200">
+            <h1 class="main-title">THEREDHERB</h1>
+            <h2 class="sub-title">RESIDENT EVIL</h2>
+            <p class="release-date">OFFICIAL WEBSITE</p>
+            <div class="search-wrapper" id="searchWrapper">
+                <a href="#" class="order-btn" id="searchBtn" onclick="toggleSearch(event)">START SEARCHING &gt;</a>
+                <input type="text" class="search-input" id="searchInput" placeholder="Search ...">
+            </div>
+        </div>
+        
+        <div class="platforms" data-aos="fade-up" data-aos-duration="1000">
+             <p>RESIDENT EVIL | WIKI ARCHIVE</p>
+             <span>A comprehensive database and encyclopedia covering the history, characters, and world of survival horror.</span>
+        </div>
+    </header>
+
+    <section class="character-section" id="characters" data-aos="fade-up" data-aos-duration="1000">
+        <div class="char-info" id="char-info" data-aos="fade-right" data-aos-duration="1200">
+            <h2 id="char-name">Ethan Winters</h2>
+            <p id="char-desc">"Ethan Winters was an American systems engineer infected with a weaponized species of Mold during the 2017 Dulvey incident caused by Eveline. After being rescued by Chris Redfield, Ethan received military training and started a family with his wife, Mia, and their daughter, Rosemary. In February 2021, he fought to rescue Rosemary from Miranda, who intended to use her as a vessel for her deceased daughter, Eva. Ethan ultimately saved his family by sacrificing his own life.</p>
+            <a href="#" onclick="goToDetail(event)" class="investigate-btn">INVESTIGATE FURTHER</a>
+        </div>
+
+        <div class="char-display" id="char-display" data-aos="zoom-in" data-aos-duration="1500">
+             <div class="main-char-image">
+                 <img id="char-img" src="RenderEthan.png" alt="Karakter Aktif">
+             </div>
+        </div>
+        
+        <div class="char-thumbnails-right" data-aos="fade-left" data-aos-duration="1200">
+             <div class="thumb active" onclick="changeCharacter(0)"><img src="EthanThumb.png" alt="Thumb 1"></div>
+             <div class="thumb" onclick="changeCharacter(1)"><img src="ChrisThumb.png" alt="Thumb 2"></div>
+             <div class="thumb" onclick="changeCharacter(2)"><img src="LeonThumb.png" alt="Thumb 3"></div>
+             <div class="thumb" onclick="changeCharacter(3)"><img src="ClaireThumb.png" alt="Thumb 4"></div>
+             <div class="thumb" onclick="changeCharacter(4)"><img src="GraceThumb.png" alt="Thumb 5"></div>
+        </div>
+
+        <div class="char-selector-bottom" data-aos="fade-up" data-aos-duration="1000">
+            <div class="circle active" onclick="changeCharacter(0)"></div>
+            <div class="circle" onclick="changeCharacter(1)"></div>
+            <div class="circle" onclick="changeCharacter(2)"></div>
+            <div class="circle" onclick="changeCharacter(3)"></div>
+            <div class="circle" onclick="changeCharacter(4)"></div>
+        </div>
+    </section>
+
+    <!-- LATEST RELEASES SECTION -->
+    <section class="editions-section" id="editions">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">LATEST RELEASES</h2>
+        
+        <div class="editions-container">
+            <p class="choose-text" data-aos="fade-up" data-aos-duration="1000">Stay up to date with the latest news and updates</p>
+            
+            <div class="cards-wrapper">
+                <div class="edition-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="edition-image">
+                        <img src="RequiemPost.png" alt="Shadows of Rose">
+                    </div>
+                    <h3>Resident Evil Requiem</h3>
+                    <p class="edition-excerpt">Requiem follows the naming convention started with Resident Evil 7: Biohazard in prioritising names over numbers, with the announcement teaser featuring a 'glitch' effect in which the letter 'Q' becomes 9 to indicate its position as the ninth mainline entry.[1] It is the first game in the series to have Latin American Spanish dubbing.</p>
+                    <div class="price-row">
+                        <span class="price">Feb 27, 2026</span>
+                        <a href="#" class="buy-btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="edition-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="edition-image">
+                        <img src="RE2026.png" alt="Mercenaries Update">
+                    </div>
+                    <h3>Resident Evil (2026)</h3>
+                    <p class="edition-excerpt">From the mind of visionary filmmaker Zach Cregger (Weapons, Barbarian) comes a thrilling — and terrifying — reinvention of the Resident Evil franchise. In an all-new story, Resident Evil follows Bryan (Austin Abrams), a medical courier who unwittingly finds himself in an action-packed, non-stop race for survival as one fateful, horrifying night collapses around him in chaos.</p>
+                    <div class="price-row">
+                        <span class="price">Sept 18, 2026</span>
+                        <a href="#" class="buy-btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="edition-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="edition-image">
+                        <img src="Veronica.png" alt="Third Person Mode">
+                    </div>
+                    <h3>Resident Evil Veronica</h3>
+                    <p class="edition-excerpt">recapping the events of Resident Evil, Resident Evil 2 and Resident Evil 3. Following the video's presentation, they conducted Q&A with Producer Yoshiaki Hirabayashi. Most questions and answers would be detailed in notes as recordings were forbidden. Each session only allowed 30 people, and spanned over 3 days.</p>
+                    <div class="price-row">
+                        <span class="price">Upcoming 2027</span>
+                        <a href="#" class="buy-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="locations-section" id="locations">
+        <div class="locations-text" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Playable Locations</h2>
+            <p>The complete map encompasses an astonishing world filled with brilliant settings, intricate details, and secrets hidden in every corner. Explore thoroughly and stay alert to every clue across the various environments.</p>
+            <div class="nav-arrows">
+                <button>&lt;</button>
+                <button>&gt;</button>
+            </div>
+        </div>
+        
+        <div class="locations-gallery">
+            <div class="loc-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="loc-image">
+                    <img src="RPD.png" alt="Raccon City">
+                    <div class="loc-overlay">
+                        <span>EXPLORE</span>
+                    </div>
+                </div>
+                <h4>Raccoon City</h4>
+                <p>an industrial city located in the American Midwest. It was widely regarded as the home of the pharmaceutical giant Umbrella Corporation, whose investments fueled the city's economic growth.</p>
+            </div>
+            
+            <div class="loc-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="loc-image">
+                    <img src="Wrenwood.png" alt="Wrenwood">
+                    <div class="loc-overlay">
+                        <span>EXPLORE</span>
+                    </div>
+                </div>
+                <h4>Wrenwood</h4>
+                <p>a city located in the Midwestern United States. It is best known for its historic locales, and for its close proximity to Raccoon City.</p>
+            </div>
+            
+             <div class="loc-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="loc-image">
+                    <img src="Pablo.png" alt="El Pueblo">
+                    <div class="loc-overlay">
+                        <span>EXPLORE</span>
+                    </div>
+                </div>
+                <h4>Valdelobos</h4>
+                <p>a mountainous region of Spain. Valdelobos has culturally been isolated from the rest of Spain, being the centre of a pre-Roman city state and the home of Los Iluminados, a neo-animalistic, primal religion which survived Reconquista.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function toggleSearch(e) {
+            e.preventDefault();
+            const wrapper = document.getElementById('searchWrapper');
+            const input = document.getElementById('searchInput');
+            wrapper.classList.add('active');
+            input.focus();
+        }
+
+        document.addEventListener('click', function(e) {
+            const wrapper = document.getElementById('searchWrapper');
+            if (!wrapper.contains(e.target) && wrapper.classList.contains('active')) {
+                wrapper.classList.remove('active');
+                document.getElementById('searchInput').value = '';
+            }
+        });
+
+        AOS.init({
+            once: true,
+            offset: 100,
+        });
+
+        const characterData = [
+            {
+                name: "Ethan Winters",
+                desc: "Ethan Winters was an American systems engineer infected with a weaponized species of Mold during the 2017 Dulvey incident caused by Eveline. After being rescued by Chris Redfield, Ethan received military training and started a family with his wife, Mia, and their daughter, Rosemary. In February 2021, he fought to rescue Rosemary from Miranda, who intended to use her as a vessel for her deceased daughter, Eva. Ethan ultimately saved his family by sacrificing his own life.",
+                imgSrc: "RenderEthan.png"
+            },
+            {
+                name: "Chris Redfield",
+                desc: "Captain Chris Redfield is an American operator in the Bioterrorism Security Assessment Alliance, in which he has served since its foundation in 2003. Redfield has built up and dedicated his career in destroying Bio Organic Weapons and fighting against producers and sellers of bioweapons after his experiences with bioterrorism in 1998. He is the older brother of TerraSave member Claire Redfield. He is also the mentor of American superhuman Rosemary Winters.",
+                imgSrc: "ChrisRender.png"
+            },
+            {
+                name: "Leon S.Kennedy",
+                desc: "Leon Scott Kennedy, more commonly known as Leon S. Kennedy, is an Italian-American[3] currently employed as a federal agent by the Division of Security Operations, a counterterrorism agency under direct presidential command. Kennedy is a known survivor of the 1998 Raccoon City Destruction Incident, when he was a police officer. Following his escape, he was forcefully recruited into a top-secret anti-Umbrella team under USSTRATCOM devoted to anti-B.O.W. combat, serving in repeated operations around the world until 2011.",
+                imgSrc: "LeonRender.png"
+            },
+            {
+                name: "Claire Redfield",
+                desc: "Claire Redfield is a current member of the human rights organization, TerraSave. She is the younger sister of BSAA operative and former S.T.A.R.S. member Chris Redfield. Since her survival in the Raccoon City incident in 1998, Claire would become involved or end up in the midst of several biohazard outbreaks around the world, prompting her and her brother, to devote their career to combating the threat of Bio Organic Weapons.",
+                imgSrc: "ClaireRender.png"
+            },
+            {
+                name: "Grace Ashcroft",
+                desc: "Grace Ashcroft is an intelligence analyst for the Federal Bureau of Investigation. Eight years after the assassination of her adoptive mother, Alyssa Ashcroft, Grace was targeted by Victor Gideon and Zeno of the shadow organization called The Connections, who believed that Grace was the key to unlocking Elpis.",
+                imgSrc: "GraceRender.png"
+            }
+        ];
+
+        let activeCharIndex = 0;
+        function changeCharacter(index) {
+            activeCharIndex = index;
+            const thumbs = document.querySelectorAll('.thumb');
+            const circles = document.querySelectorAll('.circle');
+            const info = document.getElementById('char-info');
+            const display = document.getElementById('char-display');
+            
+            thumbs.forEach((th, i) => th.classList.toggle('active', i === index));
+            circles.forEach((c, i) => c.classList.toggle('active', i === index));
+            
+            info.style.opacity = 0;
+            display.style.opacity = 0;
+            
+            setTimeout(() => {
+                document.getElementById('char-name').innerText = characterData[index].name;
+                document.getElementById('char-desc').innerText = characterData[index].desc;
+                document.getElementById('char-img').src = characterData[index].imgSrc;
+                
+                info.style.opacity = 1;
+                display.style.opacity = 1;
+            }, 300);
+        }
+        
+        function goToDetail(e) {
+            e.preventDefault();
+            window.location.href = `Char_1.html?char=${activeCharIndex}`;
+        }
+    </script>
+    
+    <footer class="footer">
+        <p>RESIDENT EVIL FANDOM WIKI &bull; COMMUNITY DATABASE ARCHIVE</p>
+    </footer>
+</body>
+</html>
